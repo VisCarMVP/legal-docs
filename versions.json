@@ -1,0 +1,17 @@
+{
+  "documents": {
+    "privacy_notice": {
+      "current": "1.0.0",
+      "url": "https://viscarmvp.github.io/legal-docs/privacy-notice/v1.0.0.html",
+      "material_change": false,
+      "effective_at": "2026-05-15"
+    },
+    "terms": {
+      "current": "1.0.0",
+      "url": "https://viscarmvp.github.io/legal-docs/terms/v1.0.0.html",
+      "material_change": false,
+      "effective_at": "2026-05-15"
+    }
+  },
+  "updated_at": "2026-05-15T00:00:00Z"
+}

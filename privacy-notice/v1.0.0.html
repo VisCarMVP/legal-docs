@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index,follow" />
+<title>Privacy Notice (Beta) v1.0.0 — Viscar</title>
+<meta name="description" content="Viscar Beta Privacy Notice, version 1.0.0. How we handle personal information during the closed beta." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231e6fff'/><text x='16' y='23' font-family='system-ui,sans-serif' font-size='20' font-weight='800' fill='white' text-anchor='middle'>V</text></svg>" />
+<link rel="stylesheet" href="../assets/legal.css" />
+</head>
+<body>
+
+<header class="legal-topbar">
+    <a class="legal-topbar-logo" href="../index.html">
+        <span class="legal-topbar-mark">V</span>
+        <span class="legal-topbar-name">VISCAR</span>
+    </a>
+    <span class="legal-topbar-back">// Legal</span>
+</header>
+
+<article class="legal-doc">
+
+    <h1>Privacy Notice — Beta</h1>
+
+    <div class="legal-doc-meta">
+        <strong>Version 1.0.0</strong> · Effective: May 15, 2026 · Applies to: iOS app (TestFlight), beta website, beta API
+    </div>
+
+    <h2>About this Notice</h2>
+    <p>Viscar is currently in <strong>closed beta</strong>, distributed through Apple TestFlight, the website at <a href="https://viscarapp.com">https://viscarapp.com</a>, and a free-tier developer API. This Notice explains how your personal information is handled during the beta period.</p>
+    <p>The beta is expected to run for approximately <strong>six months</strong> from the Effective Date. We are in the process of incorporating <strong>Viscar Inc.</strong> (Delaware C-Corporation). Upon incorporation, this Notice will be replaced by a full Privacy Policy and your acceptance will be requested again.</p>
+
+    <h2>1. Who operates this beta</h2>
+    <p>The Viscar beta is operated jointly during the pre-incorporation period by two individuals:</p>
+    <ul>
+        <li><strong>[Operator A — TBD]</strong>, located in California, United States</li>
+        <li><strong>[Operator B — TBD]</strong>, located in Poland, European Union</li>
+    </ul>
+    <p>The primary contact for any privacy-related request is: <strong><a href="mailto:legal@viscar.com">legal@viscar.com</a></strong></p>
+    <p>If you are located in the European Economic Area, you may direct any privacy enquiry to <strong>[Operator B — TBD]</strong> at the same address (<a href="mailto:legal@viscar.com">legal@viscar.com</a>), in their capacity as the EU-based operator.</p>
+    <p>The operators undertake to incorporate <strong>Viscar Inc.</strong> within approximately six months. Upon incorporation, all rights and obligations under this Notice will be assumed by the company.</p>
+
+    <h2>2. What information we collect</h2>
+
+    <h3>2.1. Information you provide directly</h3>
+    <p><strong>Account information.</strong> When you create an account on the website or in the iOS app, we collect:</p>
+    <ul>
+        <li>Email address</li>
+        <li>Password, stored as a salted hash (we never see or store your plaintext password)</li>
+        <li>Email verification code, generated server-side and validated upon entry</li>
+    </ul>
+    <p><strong>Support communications.</strong> If you submit a support request through the in-app contact form or the website contact form, we receive the content of your message and, if provided, your email address for response. To deliver these support requests to the operators, we use the Telegram Bot API operated by Telegram Messenger Inc. — the content of your message and your email address are transmitted through Telegram's infrastructure during this delivery. <strong>You do not need a Telegram account to contact us</strong>, and we do not require any Telegram identifier from you. Replies from the operators are sent to you by email.</p>
+
+    <h3>2.2. Information collected automatically by the iOS app</h3>
+    <p><strong>Trip and routing data — collected anonymously.</strong> When you use the navigation features, the app records:</p>
+    <ul>
+        <li>GPS coordinates along your route</li>
+        <li>Motion sensor readings (accelerometer, gyroscope)</li>
+        <li>Aggregated motion patterns derived from these sensors</li>
+        <li>Timestamps</li>
+    </ul>
+    <p>This data is uploaded under a randomly generated trip identifier that is <strong>not linked to your user account</strong> in any database we maintain. The operators cannot determine which trips belong to which user. Once uploaded, trip data exists in our systems as anonymous infrastructure data used to build aggregated routing and traffic information.</p>
+    <p><strong>Location data for routing.</strong> When you request a route, your device sends current location coordinates to our servers to compute and return the route. These real-time location queries are not retained against your account after the route is delivered.</p>
+
+    <h3>2.3. Information collected automatically by the website and API</h3>
+    <p><strong>Account-related requests.</strong> When you sign up, sign in, or interact with your account on the website, we receive your email address, request metadata, and any data you submit through forms.</p>
+    <p><strong>API usage.</strong> If you use the developer API (free beta tier), we receive your API key identifier, the endpoints you call, the timestamps of those calls, request counts, and the IP address making the call. We do not retain the content of your route queries against your API key beyond what is necessary to compute and return responses.</p>
+    <p><strong>Technical data.</strong> Our infrastructure logs each request to our servers, including:</p>
+    <ul>
+        <li>IP address</li>
+        <li>Device or browser information</li>
+        <li>App or API version</li>
+        <li>Request timestamps</li>
+        <li>Error events and crash data</li>
+    </ul>
+    <p>These logs are processed by our logging provider, Better Stack (Logtail), and retained for 90 days.</p>
+
+    <h2 id="cookies">3. Cookies and similar technologies</h2>
+    <p>Our website uses <strong>only essential cookies</strong> required for authentication and security. We do not use analytics cookies, marketing cookies, or third-party tracking technologies.</p>
+    <table>
+        <thead>
+            <tr><th>Cookie</th><th>Purpose</th><th>Type</th><th>Duration</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><code>viscar_session</code></td><td>Maintains your signed-in session</td><td>First-party, essential</td><td>Session</td></tr>
+            <tr><td><code>csrf_token</code></td><td>Protects against cross-site request forgery</td><td>First-party, essential</td><td>Session</td></tr>
+        </tbody>
+    </table>
+    <p>We may also store a small flag in your browser's localStorage to remember that you have dismissed the cookie notice on the website. This is not a cookie and is not transmitted to our servers.</p>
+    <p>The iOS app does not use browser cookies. It may use equivalent on-device identifiers necessary for authentication, as described in Section 2.</p>
+    <p>We do not use third-party advertising trackers, behavioral analytics, or social media pixels.</p>
+
+    <h2>4. Device permissions on iOS</h2>
+    <p>The iOS app requests the following permissions:</p>
+    <table>
+        <thead>
+            <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Location (When In Use / Always)</td><td>Navigation and trip recording for service improvement</td><td>Yes, for navigation features</td></tr>
+            <tr><td>Motion &amp; Fitness</td><td>Telemetry collection used to improve service accuracy</td><td>Yes, for telemetry-based features</td></tr>
+            <tr><td>Push Notifications</td><td>Routing alerts and weather notifications (when activated)</td><td>Optional</td></tr>
+        </tbody>
+    </table>
+    <p>You can grant, revoke, or modify any of these permissions at any time through your device's Settings. Revoking a permission may disable any feature that depends on it.</p>
+
+    <h2>5. How we use your information</h2>
+    <p>We process personal information for the following purposes. For users in the European Economic Area, the legal basis under GDPR is indicated.</p>
+    <table>
+        <thead>
+            <tr><th>Purpose</th><th>Legal basis (GDPR)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Creating and managing your account</td><td>Contract — Art. 6(1)(b)</td></tr>
+            <tr><td>Providing navigation, routing, and API services</td><td>Contract — Art. 6(1)(b)</td></tr>
+            <tr><td>Email verification and password reset</td><td>Contract — Art. 6(1)(b)</td></tr>
+            <tr><td>Improving the Service through anonymous trip data</td><td>Legitimate interest — Art. 6(1)(f)</td></tr>
+            <tr><td>Service-related communications</td><td>Contract / Legitimate interest</td></tr>
+            <tr><td>Customer support</td><td>Contract — Art. 6(1)(b)</td></tr>
+            <tr><td>API rate limiting, security, and abuse prevention</td><td>Legitimate interest — Art. 6(1)(f)</td></tr>
+            <tr><td>Compliance with legal obligations</td><td>Legal obligation — Art. 6(1)(c)</td></tr>
+        </tbody>
+    </table>
+
+    <h2>6. Service providers and sub-processors</h2>
+    <p>We share personal information with the following service providers, each of which processes data on our behalf under appropriate contractual or industry-standard safeguards:</p>
+    <table>
+        <thead>
+            <tr><th>Provider</th><th>Purpose</th><th>Data processed</th><th>Location</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Amazon Web Services, Inc.</td><td>Cloud infrastructure: compute, database, storage</td><td>All Service data</td><td>United States (us-east-1)</td></tr>
+            <tr><td>Apple Inc.</td><td>Map tiles, geocoding, TestFlight distribution, App Store services</td><td>Location queries, account identifiers</td><td>United States / global</td></tr>
+            <tr><td>Open-Meteo</td><td>Weather data lookup along requested routes</td><td>Approximate route coordinates</td><td>Germany / European Union</td></tr>
+            <tr><td>Stripe, Inc.</td><td>Payment processing (when paid plans become active)</td><td>Email, payment information</td><td>United States / global</td></tr>
+            <tr><td>Google LLC (Workspace)</td><td>Business email infrastructure for the operators (handling of privacy and legal correspondence to legal@viscar.com)</td><td>Email addresses and email content received at the contact address</td><td>United States / global</td></tr>
+            <tr><td>Resend, Inc.</td><td>Transactional email delivery (verification codes, password resets, account notifications)</td><td>Email address, email content</td><td>United States / European Union</td></tr>
+            <tr><td>Better Stack (Logtail)</td><td>Application logging and infrastructure monitoring</td><td>Server logs, IP addresses, request metadata</td><td>European Union</td></tr>
+            <tr><td>Telegram Messenger Inc.</td><td>Delivery of in-app and website support requests to the operators (no user-side Telegram interaction required)</td><td>Email address and message content of support inquiries</td><td>Global</td></tr>
+            <tr><td>[Polish development company — TBD]</td><td>Software development services performed for the Viscar Service; developers engaged by this entity have technical access to production systems for development, maintenance, and incident response</td><td>Limited technical access to Service data</td><td>Poland, European Union</td></tr>
+        </tbody>
+    </table>
+    <p><strong>We do not sell your personal information.</strong> We do not engage in cross-context behavioral advertising or share data for marketing purposes.</p>
+
+    <h2>7. International data transfers</h2>
+    <p>Our primary infrastructure is hosted in the United States (AWS, us-east-1 region, Virginia). If you are located in the European Economic Area, the United Kingdom, Switzerland, or Canada, your personal information is transferred to and processed in the United States.</p>
+    <p>For these transfers we rely on the following safeguards:</p>
+    <ul>
+        <li><strong>Standard Contractual Clauses</strong> approved by the European Commission (Decision 2021/914) where applicable to direct provider relationships</li>
+        <li>The <strong>EU-US Data Privacy Framework</strong> for transfers to participating US recipients</li>
+        <li>The <strong>UK Addendum</strong> to the SCCs for transfers from the United Kingdom</li>
+        <li>The <strong>Swiss-US Data Privacy Framework</strong> for transfers from Switzerland</li>
+        <li>For Canadian users, transfers are conducted in accordance with PIPEDA</li>
+    </ul>
+    <p>A copy of the relevant transfer mechanism is available on request from <a href="mailto:legal@viscar.com">legal@viscar.com</a>.</p>
+
+    <h2>8. Data retention</h2>
+    <table>
+        <thead>
+            <tr><th>Data category</th><th>Retention period</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Account information</td><td>While your account is active</td></tr>
+            <tr><td>Account information after deletion request</td><td>6 months as a soft-deleted account, then permanently deleted</td></tr>
+            <tr><td>Anonymous trip data</td><td>Retained beyond beta as anonymous infrastructure data</td></tr>
+            <tr><td>Server logs</td><td>90 days</td></tr>
+            <tr><td>API usage records</td><td>12 months for rate limiting and abuse prevention</td></tr>
+            <tr><td>Support communications</td><td>12 months from resolution</td></tr>
+            <tr><td>Backups containing personal data</td><td>Up to 35 days after deletion from the primary database</td></tr>
+        </tbody>
+    </table>
+    <p>Maximum retention of identifiable personal data during beta: <strong>12 months from collection</strong>, unless required by law to retain longer.</p>
+
+    <h2>9. Your privacy rights</h2>
+    <p>Depending on your jurisdiction, you have the following rights:</p>
+
+    <h3>9.1. European Economic Area and United Kingdom (GDPR / UK GDPR)</h3>
+    <ul>
+        <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+        <li><strong>Rectification</strong> — correct inaccurate or incomplete data</li>
+        <li><strong>Erasure</strong> — request deletion of your data, subject to lawful exceptions</li>
+        <li><strong>Restriction</strong> — restrict processing in certain circumstances</li>
+        <li><strong>Data portability</strong> — receive your data in a structured, machine-readable format</li>
+        <li><strong>Object</strong> — object to processing based on legitimate interests</li>
+        <li><strong>Withdraw consent</strong> — where processing is based on consent, withdraw it at any time</li>
+        <li><strong>Lodge a complaint</strong> with your local data protection supervisory authority</li>
+    </ul>
+
+    <h3>9.2. California (CCPA / CPRA)</h3>
+    <ul>
+        <li><strong>Right to know</strong> what personal information we collect, use, and share</li>
+        <li><strong>Right to delete</strong> your personal information</li>
+        <li><strong>Right to correct</strong> inaccurate information</li>
+        <li><strong>Right to opt out of "sale" or "sharing"</strong> — we do not sell or share personal information for cross-context behavioral advertising</li>
+        <li><strong>Right to limit use of sensitive personal information</strong>, which includes precise geolocation</li>
+        <li><strong>Right to non-discrimination</strong> for exercising these rights</li>
+    </ul>
+
+    <h3>9.3. Canada (PIPEDA, Quebec Law 25)</h3>
+    <ul>
+        <li><strong>Access</strong> to your personal information</li>
+        <li><strong>Correction</strong> of inaccurate information</li>
+        <li><strong>Withdrawal of consent</strong> subject to legal or contractual restrictions</li>
+        <li><strong>Right to be informed</strong> of significant decisions affecting you that rely on automated processing</li>
+        <li><strong>Complaint</strong> to the Office of the Privacy Commissioner of Canada, or the Commission d'accès à l'information du Québec for Quebec residents</li>
+    </ul>
+
+    <h3>9.4. How to exercise your rights</h3>
+    <p>Send a request to <strong><a href="mailto:legal@viscar.com">legal@viscar.com</a></strong>. We may ask for information to verify your identity. We will respond within 30 days, or within the period required by applicable law. You can also delete your account directly in the app or on the website, which initiates the retention schedule described in Section 8.</p>
+
+    <h2>10. Security</h2>
+    <p>We implement technical and organizational measures appropriate to the risk, including:</p>
+    <ul>
+        <li>Encryption in transit using TLS 1.2 or higher</li>
+        <li>Encryption at rest for database storage</li>
+        <li>Password hashing using industry-standard algorithms</li>
+        <li>Access controls and audit logging on production systems</li>
+        <li>Regular security updates to our infrastructure</li>
+    </ul>
+    <p>No system can be guaranteed fully secure. We will notify affected users and applicable supervisory authorities of any personal data breach as required by law.</p>
+
+    <h2>11. Children's privacy</h2>
+    <p>The Service is <strong>not directed at individuals under 18 years of age</strong>. We do not knowingly collect personal information from anyone under 18. If you believe a child has provided us with personal information, contact <a href="mailto:legal@viscar.com">legal@viscar.com</a> and we will promptly delete it.</p>
+
+    <h2>12. Changes to this Notice</h2>
+    <p>We may update this Notice from time to time. Each version is numbered and dated.</p>
+    <ul>
+        <li><strong>Minor updates</strong> — clarifications, formatting, or contact information changes — are published with an incremented version number; continued use of the Service constitutes acknowledgment.</li>
+        <li><strong>Material changes</strong> — new categories of data, new processing purposes, new third-party recipients, new international transfers — are notified by email and/or in-app message at least 14 days before they take effect. You will be asked to acknowledge the new version on your next login.</li>
+    </ul>
+    <p>Upon incorporation of Viscar Inc., this Notice will be replaced by a full Privacy Policy. You will be asked to accept the new document at that time.</p>
+    <p>Previous versions of this Notice are archived and available on request from <a href="mailto:legal@viscar.com">legal@viscar.com</a>.</p>
+
+    <h2>13. Contact</h2>
+    <p>For any question, concern, or request relating to this Notice or our handling of your personal data:</p>
+    <p><strong>Email:</strong> <a href="mailto:legal@viscar.com">legal@viscar.com</a></p>
+    <p><strong>Operators:</strong></p>
+    <ul>
+        <li>[Operator A — TBD], California, United States</li>
+        <li>[Operator B — TBD], Poland, European Union (EU-based contact for EEA users)</li>
+    </ul>
+
+</article>
+
+<footer class="legal-footer">
+    Viscar Privacy Notice (Beta) v1.0.0 ·
+    <a href="../index.html">All documents</a> ·
+    <a href="../terms/v1.0.0.html">Beta Tester Agreement</a>
+</footer>
+
+</body>
+</html>

@@ -62,7 +62,7 @@ a:hover { text-decoration: underline; }
 .legal-topbar-logo:hover { text-decoration: none; }
 .legal-topbar-mark {
     width: 28px; height: 28px;
-    background: url('viscar-logo.svg') center/cover no-repeat;
+    background: url('viscar-logo.png') center/cover no-repeat;
     border-radius: 8px;
     flex-shrink: 0;
 }

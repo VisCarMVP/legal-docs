@@ -62,15 +62,18 @@ a:hover { text-decoration: underline; }
 .legal-topbar-logo:hover { text-decoration: none; }
 .legal-topbar-mark {
     width: 28px; height: 28px;
-    background: linear-gradient(135deg, var(--blue) 0%, #00e5c8 100%);
+    background: url('viscar-logo.svg') center/cover no-repeat;
     border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 800; font-size: 0.85rem;
+    flex-shrink: 0;
 }
 .legal-topbar-name {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.04em;
+    background: linear-gradient(135deg, #fff 30%, #d97520 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .legal-topbar-back {
     font-family: var(--mono);

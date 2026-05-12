@@ -51,15 +51,23 @@ Currently published document types: `privacy_notice`, `terms`.
 3. Decide whether the change is **material**:
    - **Material** — new categories of data collected, new sub-processors, new processing purposes, new international transfers, new jurisdictions, change to liability terms or governing law, etc.
    - **Cosmetic** — typo fixes, formatting, contact-address change, clarifications without substance.
-4. Update `versions.json`:
+4. **Compute the SHA-256 of the new HTML file** and write it into the manifest:
+   ```bash
+   sha256sum privacy-notice/v1.1.0.html
+   ```
+   This hash is recorded on every user acceptance (in `user_consents.document_hash`)
+   so we can later prove which exact bytes the user agreed to. Forgetting it
+   leaves the field NULL on every new accept — silent loss of audit value.
+5. Update `versions.json`:
    - Bump `current` (e.g. `1.0.1` for cosmetic, `1.1.0` for material additions, `2.0.0` for full rewrites).
    - Update `url` to the new file.
+   - Update `hash` to the freshly computed SHA-256 (lower-case hex, 64 chars).
    - Set `material_change: true` only for material updates — this triggers the re-acceptance modal on the main site.
    - Set `effective_at`:
      - **Material updates** — must be at least 14 days after publication date (GDPR notice requirement).
      - **Cosmetic updates** — set to publication date.
    - Update `updated_at` to the current timestamp.
-5. Commit and push. GitHub Pages will redeploy within a few minutes.
+6. Commit and push. GitHub Pages will redeploy within a few minutes.
 
 **Old versions are never deleted.** They stay reachable by direct URL for audit purposes.
 

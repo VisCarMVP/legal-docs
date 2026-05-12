@@ -3,12 +3,14 @@
     "privacy_notice": {
       "current": "1.0.0",
       "url": "https://legal.viscarapp.com/privacy-notice/v1.0.0.html",
+      "hash": "39b91dfcd13cd440d63854da74daadc2b1f07d642572a14ec9bbd91bb8a9a847",
       "material_change": false,
       "effective_at": "2026-05-11"
     },
     "terms": {
       "current": "1.0.0",
       "url": "https://legal.viscarapp.com/terms/v1.0.0.html",
+      "hash": "9a8dcd194ac03fbb1057674d7fd09181760e964ef2d670636f526147e4685d82",
       "material_change": false,
       "effective_at": "2026-05-11"
     }

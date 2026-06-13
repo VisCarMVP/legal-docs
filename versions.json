@@ -1,19 +1,19 @@
 {
   "documents": {
     "privacy_notice": {
-      "current": "1.0.0",
-      "url": "https://legal.viscarapp.com/privacy-notice/v1.0.0.html",
-      "hash": "39b91dfcd13cd440d63854da74daadc2b1f07d642572a14ec9bbd91bb8a9a847",
-      "material_change": false,
-      "effective_at": "2026-05-11"
+      "current": "2.0.0",
+      "url": "https://legal.viscarapp.com/privacy-notice/v2.0.0.html",
+      "hash": "fbf884cfa733ecb17f59098001d78f5dbfc9dbe6709a86e02e348fdaa3391e2c",
+      "material_change": true,
+      "effective_at": "2026-06-13"
     },
     "terms": {
-      "current": "1.0.0",
-      "url": "https://legal.viscarapp.com/terms/v1.0.0.html",
-      "hash": "9a8dcd194ac03fbb1057674d7fd09181760e964ef2d670636f526147e4685d82",
-      "material_change": false,
-      "effective_at": "2026-05-11"
+      "current": "2.0.0",
+      "url": "https://legal.viscarapp.com/terms/v2.0.0.html",
+      "hash": "665d09ee2bf3e062c873aa54fb9e7e9b8ead88367c9eb9284ebca3128143d86b",
+      "material_change": true,
+      "effective_at": "2026-06-13"
     }
   },
-  "updated_at": "2026-05-12T00:00:00Z"
+  "updated_at": "2026-06-13T00:00:00Z"
 }

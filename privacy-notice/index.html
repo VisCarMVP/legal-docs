@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Redirect stub: /privacy-notice (no version) → the CURRENT version.
+     Layer 1: JS reads ../versions.json (single source of truth — cannot drift).
+     Layer 2: no-JS fallback via meta-refresh below — the URL is baked at
+     publish time; updating it is a step of the release checklist (README).
+     Versioned URLs (vX.Y.Z.html) stay untouched and reachable forever. -->
+<meta name="robots" content="noindex" />
+<title>Viscar Privacy Notice — current version</title>
+<link rel="icon" type="image/png" href="../assets/viscar-logo.png" />
+<link rel="stylesheet" href="../assets/legal.css" />
+<meta http-equiv="refresh" content="2; url=v2.1.1.html" />
+<script>
+    fetch('../versions.json', { cache: 'no-store' })
+        .then(function (r) { return r.json(); })
+        .then(function (m) { location.replace(m.documents.privacy_notice.url); })
+        .catch(function () { /* meta-refresh fallback takes over */ });
+</script>
+</head>
+<body>
+
+<header class="legal-topbar">
+    <a class="legal-topbar-logo" href="../index.html">
+        <span class="legal-topbar-mark"></span>
+        <span class="legal-topbar-name">VISCAR</span>
+    </a>
+    <span class="legal-topbar-back">// Legal</span>
+</header>
+
+<main class="legal-page" style="text-align:center;padding-top:4rem;">
+    <p>Redirecting to the current version of the Privacy Notice…</p>
+    <p>If nothing happens, <a href="v2.1.1.html">open it here</a>.</p>
+</main>
+
+</body>
+</html>

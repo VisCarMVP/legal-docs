@@ -15,12 +15,30 @@ legal-docs/
 ├── assets/
 │   └── legal.css                      # shared stylesheet for all legal pages
 ├── privacy-notice/
+│   ├── index.html                     # no-version redirect stub → CURRENT version
 │   ├── v1.0.0.md                      # markdown source
 │   └── v1.0.0.html                    # rendered HTML page served to users
 └── terms/
+    ├── index.html                     # no-version redirect stub → CURRENT version
     ├── v1.0.0.md                      # markdown source for the Beta Tester Agreement
     └── v1.0.0.html                    # rendered HTML page served to users
 ```
+
+## Version-less URLs
+
+`https://legal.viscarapp.com/privacy-notice` and `…/terms` (no version) open the
+**current** version: GitHub Pages 301s the bare path to the directory and serves
+its `index.html` stub. The stub redirects in two layers:
+
+1. **JS** fetches `../versions.json` and `location.replace(...)`s to the
+   `documents.<type>.url` — always current, cannot drift from the manifest.
+2. **No-JS fallback** — a `meta http-equiv="refresh"` with the version baked in
+   at publish time (plus a visible link). Keeping it current is a step of the
+   release checklist below.
+
+The reader always LANDS on the pinned `vX.Y.Z.html` URL, so the address bar
+shows exactly which version they are looking at — consent links from the main
+site keep using the full versioned URLs from `versions.json` as before.
 
 ## `versions.json`
 
@@ -67,7 +85,12 @@ Currently published document types: `privacy_notice`, `terms`.
      - **Material updates** — must be at least 14 days after publication date (GDPR notice requirement).
      - **Cosmetic updates** — set to publication date.
    - Update `updated_at` to the current timestamp.
-6. Commit and push. GitHub Pages will redeploy within a few minutes.
+6. **Update the no-version redirect stubs** — in `privacy-notice/index.html`
+   and/or `terms/index.html` (whichever document changed) point the
+   `meta http-equiv="refresh"` URL and the visible fallback link at the new
+   `vX.Y.Z.html`. The JS layer follows `versions.json` automatically; the
+   stub edit only keeps the no-JS fallback honest.
+7. Commit and push. GitHub Pages will redeploy within a few minutes.
 
 **Old versions are never deleted.** They stay reachable by direct URL for audit purposes.
 

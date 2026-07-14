@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index,follow" />
+<title>API Terms of Use v1.0.0 — Viscar</title>
+<meta name="description" content="Viscar API Terms of Use, version 1.0.0. Terms governing use of the Viscar developer API during the closed beta, operated by Viscar Inc." />
+<link rel="icon" type="image/png" href="../assets/viscar-logo.png" />
+<link rel="stylesheet" href="../assets/legal.css" />
+</head>
+<body>
+
+<header class="legal-topbar">
+    <a class="legal-topbar-logo" href="../index.html">
+        <span class="legal-topbar-mark"></span>
+        <span class="legal-topbar-name">VISCAR</span>
+    </a>
+    <span class="legal-topbar-back">// Legal</span>
+</header>
+
+<article class="legal-doc">
+
+    <h1>Viscar API Terms of Use</h1>
+
+    <div class="legal-doc-meta">
+        <strong>Version 1.0.0</strong> · Effective: July 14, 2026 · Applies to: developer API, developer dashboard
+    </div>
+
+    <h2>1. Acceptance and parties</h2>
+    <p>These API Terms of Use ("API Terms") are an agreement between <strong>Viscar Inc.</strong>, a Delaware C-Corporation with its principal place of business at 1119 Linden Ave, Glendale, CA 91201, United States ("Viscar", "we", "us", "our"), and the developer accepting them ("Developer", "you").</p>
+    <p>You accept these API Terms when you request or generate an API key in the developer dashboard (by checking the acceptance box). Your acceptance is recorded in our consent log together with the document version.</p>
+    <p>These API Terms supplement the <a href="../terms/index.html">Viscar Beta Tester Agreement</a> and the <a href="../privacy-notice/index.html">Privacy Notice (Beta)</a>. Where these API Terms conflict with the Beta Tester Agreement with respect to API use, these API Terms prevail.</p>
+    <p>We may update these API Terms. For material changes you will be notified and asked to re-accept the new version the next time you sign in to the developer dashboard or manage your API keys (see Section 12).</p>
+
+    <h2>2. Beta status</h2>
+    <p>The API is provided in <strong>beta</strong>, "AS IS" and "AS AVAILABLE":</p>
+    <ul>
+        <li>No SLA, and no guarantee of uptime or availability.</li>
+        <li>Viscar may change endpoints, response formats, quotas, and rate limits, or discontinue the service, without prior notice during the beta.</li>
+        <li>All data returned by the API — routes, road-quality data, weather, and any future layers — is <strong>informational only</strong>; accuracy is not guaranteed.</li>
+    </ul>
+
+    <h2>3. License grant</h2>
+    <p>Subject to these API Terms, Viscar grants you a non-exclusive, non-transferable, revocable license to:</p>
+    <ul>
+        <li>call the API within the established rate limits and quotas;</li>
+        <li>use API responses within your own application or service; and</li>
+        <li>display the data to end users of your application.</li>
+    </ul>
+    <p>No other rights are granted. All rights not expressly granted are reserved by Viscar and its upstream data providers.</p>
+
+    <h2>4. Restrictions</h2>
+    <p>You may <strong>not</strong>:</p>
+    <ul>
+        <li>systematically extract data, bulk-scrape, or mass-download API responses;</li>
+        <li>build a competing dataset or service based on data obtained from the API;</li>
+        <li>resell or redistribute API responses <strong>as data</strong> to third parties;</li>
+        <li>reverse-engineer the Viscar routing engine or Viscar's algorithms;</li>
+        <li>share your API key with third parties, or circumvent rate limits (including by using multiple keys);</li>
+        <li>use the API in safety-critical applications — including autonomous driving, emergency services, or life-support systems. The data is informational, and navigation output is not a substitute for the driver's own assessment of road conditions.</li>
+    </ul>
+
+    <h2>5. Road quality data</h2>
+    <p>Road-quality data and the driving alerts derived from it are <strong>© Viscar Inc., proprietary</strong>.</p>
+    <p>It is expressly prohibited to extract, accumulate, or cache this data beyond the current session, or to use it to build derivative road-quality datasets.</p>
+    <p>Permitted use is limited to displaying this data in your application in the context of a route.</p>
+
+    <h2>6. Attribution</h2>
+    <p>When displaying data obtained from the API, you must show:</p>
+    <ul>
+        <li><strong>"© OpenStreetMap contributors"</strong> (ODbL) — when displaying routes or road geometry;</li>
+        <li><strong>"Weather data by OpenWeather"</strong> — when displaying weather fields;</li>
+        <li>a link to the full data-source terms: <a href="https://viscarapp.com/docs/licenses">https://viscarapp.com/docs/licenses</a>.</li>
+    </ul>
+    <p>Weather-derived fields are provided for display within your application; systematic extraction or redistribution of weather data is not permitted.</p>
+    <p>Each API response includes a machine-readable <code>attribution</code> section identifying the sources present in that response. You must not remove, hide, or alter it or the notices it requires.</p>
+
+    <h2>7. API keys and rate limits</h2>
+    <p>Your API key is personal to your account; you are responsible for keeping it secure. Activity performed with your key is attributed to you. Notify us at <a href="mailto:contact@viscarapp.com">contact@viscarapp.com</a> immediately if you believe your key has been compromised.</p>
+    <p>Current rate limits and quotas are stated in the documentation at <a href="https://viscarapp.com/docs">https://viscarapp.com/docs</a>; Viscar may change them at any time. Viscar may ask you to describe your use case in the event of significant traffic growth.</p>
+
+    <h2>8. Data and privacy</h2>
+    <p>Viscar logs API request metadata — API key, request volumes, endpoints called, and IP addresses — for operational purposes and abuse prevention.</p>
+    <p>If you pass coordinates or other data of your own end users to the API, <strong>you are solely responsible for the legal basis</strong> (such as consent) of processing your users' data under applicable law, including the GDPR where it applies.</p>
+    <p>Viscar's handling of personal data is described in the <a href="../privacy-notice/index.html">Privacy Notice (Beta)</a>.</p>
+
+    <h2>9. Termination</h2>
+    <p>Viscar may revoke your API key immediately and without notice for a breach of these API Terms. You may stop using the API at any time.</p>
+    <p>Upon termination, you must stop calling the API and delete data accumulated from the API, except for content already lawfully displayed to your end users.</p>
+
+    <h2>10. Warranty disclaimer and limitation of liability</h2>
+    <p>The service is provided <strong>"AS IS"</strong>, without express or implied warranties of any kind, including warranties of merchantability, fitness for a particular purpose, accuracy, reliability, availability, completeness, or non-infringement.</p>
+    <p>To the maximum extent permitted by applicable law, Viscar's total aggregate liability for any and all claims arising out of or relating to the API is limited to the amount you paid Viscar for the API in the 12 months preceding the event giving rise to the claim (during the free beta: <strong>US $0</strong>).</p>
+    <p>Viscar is not liable for decisions made on the basis of API data — routes, weather conditions, or road-quality assessments.</p>
+
+    <h2>11. Governing law</h2>
+    <p>These API Terms are governed by the laws of the State of Delaware, United States, without regard to its conflict-of-laws principles. Any dispute arising out of or relating to these API Terms shall be brought in the state or federal courts located in the State of Delaware, except where mandatory consumer-protection laws of your country of residence grant you the right to bring proceedings in your local courts.</p>
+
+    <h2>12. Changes and versioning</h2>
+    <p>This document is versioned (version number, content hash, and effective date), in the same way as the Privacy Notice and the Beta Tester Agreement. The machine-readable index of current versions is <a href="https://legal.viscarapp.com/versions.json">https://legal.viscarapp.com/versions.json</a>.</p>
+    <ul>
+        <li><strong>Material changes</strong> — such as changes to the license scope, the restrictions, or your core rights and obligations — require notification and re-acceptance the next time you use the developer dashboard or manage your API keys. If you do not accept, your API keys may be revoked.</li>
+        <li><strong>Non-material changes</strong> — clarifications, formatting, or contact-detail changes — are published as a new version without re-acceptance; continued use of the API constitutes acceptance.</li>
+    </ul>
+
+    <h2>13. Contact</h2>
+    <p>For any question regarding these API Terms:</p>
+    <p>
+        <strong>Viscar Inc.</strong><br />
+        1119 Linden Ave, Glendale, CA 91201, United States<br />
+        <strong>Email:</strong> <a href="mailto:contact@viscarapp.com">contact@viscarapp.com</a>
+    </p>
+
+</article>
+
+<footer class="legal-footer">
+    Viscar — API Terms of Use v1.0.0 · <a href="../index.html">All legal documents</a>
+</footer>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Viscar Legal Documents
 
-Static HTML pages for Viscar's binding legal documents — Privacy Notice and Beta Tester Agreement — served via GitHub Pages.
+Static HTML pages for Viscar's binding legal documents — Privacy Notice, Beta Tester Agreement, and API Terms of Use — served via GitHub Pages.
 
 **Live URL:** https://viscarmvp.github.io/legal-docs/
 (Will be moved to `https://legal.viscar.com/` once the DNS CNAME is configured — see "Custom domain" below.)
@@ -18,9 +18,13 @@ legal-docs/
 │   ├── index.html                     # no-version redirect stub → CURRENT version
 │   ├── v1.0.0.md                      # markdown source
 │   └── v1.0.0.html                    # rendered HTML page served to users
-└── terms/
+├── terms/
+│   ├── index.html                     # no-version redirect stub → CURRENT version
+│   ├── v1.0.0.md                      # markdown source for the Beta Tester Agreement
+│   └── v1.0.0.html                    # rendered HTML page served to users
+└── api-terms/
     ├── index.html                     # no-version redirect stub → CURRENT version
-    ├── v1.0.0.md                      # markdown source for the Beta Tester Agreement
+    ├── v1.0.0.md                      # markdown source for the API Terms of Use
     └── v1.0.0.html                    # rendered HTML page served to users
 ```
 
@@ -60,7 +64,12 @@ Schema:
 }
 ```
 
-Currently published document types: `privacy_notice`, `terms`.
+Currently published document types: `privacy_notice`, `terms`, `api_terms`.
+
+`api_terms` is accepted at signup (bundled into the signup consent checkbox) and
+enforced at API-key generation: the auth-api refuses to create a key for an
+account with no recorded `api_terms` acceptance, and the dashboard shows an
+accept-once dialog (`acceptance_method: api_consent`) before retrying.
 
 ## Publishing a new version
 

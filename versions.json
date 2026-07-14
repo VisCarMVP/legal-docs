@@ -8,12 +8,19 @@
       "effective_at": "2026-07-04"
     },
     "terms": {
-      "current": "2.1.1",
-      "url": "https://legal.viscarapp.com/terms/v2.1.1.html",
-      "hash": "9e72eed26de08543599af3ddef8ff3cd0cd124c0ecb68feef55f311d09854392",
+      "current": "2.1.2",
+      "url": "https://legal.viscarapp.com/terms/v2.1.2.html",
+      "hash": "fa862e2e90c3c10b45095d9a4a9ceb227e1006f9747a79cd20301cc990c9f562",
+      "material_change": false,
+      "effective_at": "2026-07-14"
+    },
+    "api_terms": {
+      "current": "1.0.0",
+      "url": "https://legal.viscarapp.com/api-terms/v1.0.0.html",
+      "hash": "31fd1ab713f3f6d4b4355cf24bb91af5673e0eed373ad918e3bd3023fa159f7a",
       "material_change": true,
-      "effective_at": "2026-07-04"
+      "effective_at": "2026-07-14"
     }
   },
-  "updated_at": "2026-07-04T00:00:00Z"
+  "updated_at": "2026-07-14T00:00:00Z"
 }

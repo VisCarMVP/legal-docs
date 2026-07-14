@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- Redirect stub: /terms (no version) → the CURRENT version.
+<!-- Redirect stub: /api-terms (no version) → the CURRENT version.
      Layer 1: JS reads ../versions.json (single source of truth — cannot drift).
      Layer 2: no-JS fallback via meta-refresh below — the URL is baked at
      publish time; updating it is a step of the release checklist (README).
      Versioned URLs (vX.Y.Z.html) stay untouched and reachable forever. -->
 <meta name="robots" content="noindex" />
-<title>Viscar Beta Tester Agreement — current version</title>
+<title>Viscar API Terms of Use — current version</title>
 <link rel="icon" type="image/png" href="../assets/viscar-logo.png" />
 <link rel="stylesheet" href="../assets/legal.css" />
-<meta http-equiv="refresh" content="2; url=v2.1.2.html" />
+<meta http-equiv="refresh" content="2; url=v1.0.0.html" />
 <script>
     fetch('../versions.json', { cache: 'no-store' })
         .then(function (r) { return r.json(); })
-        .then(function (m) { location.replace(m.documents.terms.url); })
+        .then(function (m) { location.replace(m.documents.api_terms.url); })
         .catch(function () { /* meta-refresh fallback takes over */ });
 </script>
 </head>
@@ -31,8 +31,8 @@
 </header>
 
 <main class="legal-page" style="text-align:center;padding-top:4rem;">
-    <p>Redirecting to the current version of the Beta Tester Agreement…</p>
-    <p>If nothing happens, <a href="v2.1.2.html">open it here</a>.</p>
+    <p>Redirecting to the current version of the API Terms of Use…</p>
+    <p>If nothing happens, <a href="v1.0.0.html">open it here</a>.</p>
 </main>
 
 </body>
